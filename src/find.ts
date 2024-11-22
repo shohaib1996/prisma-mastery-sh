@@ -7,7 +7,7 @@ const main = async () => {
   
   const getAllFromDB = await prisma.post.findMany({
     select: {
-      authorName: true
+      author: true
     }
   })
 
